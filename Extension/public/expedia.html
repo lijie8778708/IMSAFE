@@ -1,0 +1,78 @@
+<style>
+  #addToTripActiveScaler {
+    border: 1px solid #cccfdb;
+    border-radius: 8px;
+    width: 108.89px;
+    height: 36px;
+    float: right;
+    margin-top: 10px;
+  }
+  #ActiveScalerPopUp {
+    position: absolute;
+    width: 240px;
+    min-height: 200px;
+    background-color: lightgreen;
+    z-index: 1000;
+    margin-left: 300px;
+    margin-top: 55px;
+  }
+  #ActiveScalerTitle {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    line-height: 1.2;
+  }
+  #ActiveScalerTripTimeHolder {
+    margin-left: 10px;
+  }
+  .ActiveScalerTripTime {
+    width: 180px;
+  }
+  #ActiveScalerTripAddress {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+  #ActiveScalerAddButton {
+    display: block;
+    margin: 0 auto;
+  }
+  #ActiveScalerErrorMessage {
+    color: red;
+    font-size: xx-small;
+    text-align: center;
+    margin-top: 5px;
+    min-height: 10px;
+    margin-bottom: 5px;
+  }
+</style>
+
+<html>
+  <button id="addToTripActiveScaler"></button>
+  <div id="ActiveScalerPopUp">
+    <div id="ActiveScalerTitle">Title</div>
+    <div id="ActiveScalerTripTimeHolder">
+      Start Time:
+      <br />
+      <input
+        type="datetime-local"
+        class="ActiveScalerTripTime"
+        id="ActiveScalerTripStartTime"
+      />
+    </div>
+    <div id="ActiveScalerTripTimeHolder">
+      Duration:
+      <br />
+      <input
+        type="time"
+        class="ActiveScalerTripTime"
+        id="ActiveScalerTripDuration"
+      />
+    </div>
+    <div id="ActiveScalerTripAddress">Address</div>
+    <button id="ActiveScalerAddButton">Add to my Itinerary</button>
+    <div id="ActiveScalerErrorMessage"></div>
+  </div>
+</html>

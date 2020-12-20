@@ -1,0 +1,111 @@
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  #addToTripActiveScaler {
+    border: 1px solid #bbbac0;
+    border-radius: 4px;
+    height: 40px;
+    width: auto;
+    background-color: white;
+    text-align: center;
+    outline: none;
+  }
+  #ActiveScalerText {
+    display: inline-block;
+    line-height: 22px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #ActiveScalerPopUp {
+    position: absolute;
+    width: 275px;
+    min-height: 200px;
+    background-color: white;
+    z-index: 1000;
+    margin-top: 10px;
+    margin-left: -65px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 12px 3px #858585;
+    box-shadow: 0px 0px 12px 3px #858585;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+  }
+  #ActiveScalerTitle {
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: x-large;
+    line-height: 1.2;
+    color: #224084;
+  }
+  #ActiveScalerTripTimeHolder {
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+  #ActiveScalerTripStartTime {
+    width: 170px;
+    margin-left: 7px;
+    border: none;
+    outline: none;
+  }
+  #ActiveScalerTripDuration {
+    width: 85px;
+    margin-left: 101px;
+    border: none;
+    outline: none;
+  }
+  #ActiveScalerTripAddress {
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    color: #224084;
+  }
+  #ActiveScalerAddButton {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background-color: #0073e9;
+    border-radius: 8px;
+    border: none;
+    width: 160px;
+    height: 32px;
+    outline: none;
+    margin-top: 18px;
+    margin-bottom: 5px;
+  }
+  #ActiveScalerErrorMessage {
+    color: red;
+    font-size: xx-small;
+    text-align: center;
+    min-height: 28px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 1.2;
+  }
+</style>
+
+<html>
+  <button id="addToTripActiveScaler">
+    <span id="ActiveScalerText">Add to Trip</span>
+  </button>
+  <div id="ActiveScalerPopUp">
+    <div id="ActiveScalerTitle">Title</div>
+    <div id="ActiveScalerTripTimeHolder">
+      Start Time:
+      <input type="datetime-local" id="ActiveScalerTripStartTime" />
+    </div>
+    <div id="ActiveScalerTripTimeHolder">
+      Duration:
+      <input type="time" id="ActiveScalerTripDuration" value="01:00" />
+    </div>
+    <div id="ActiveScalerTripAddress">Address</div>
+    <button id="ActiveScalerAddButton">Add to my Itinerary</button>
+    <div id="ActiveScalerErrorMessage"></div>
+  </div>
+</html>
